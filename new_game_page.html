@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+    <script src="javascripts/add_new_game_page.js"></script>
+</head>  
+
+<body onload="load_all_game_names1()">
+
+<div><button onclick="backToHomePage()">Home Page</button></div>
+
+
+<div class="card-body">
+<table class="table table-bordered mt-3">
+    <thead>
+        <tr>
+            <th class="text-light bg-dark">ID
+            <th class="text-light bg-dark">Game Name</th>
+            <th>ADD/REMOVE</th>
+            <th>UPDATE</th>
+        </tr>
+    </thead>
+    <tbody id="results1">
+
+    </tbody>
+</table>
+</div>
+</body>
+</html>

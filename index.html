@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Stats->go to port 3000 to get it work</title>
+    <meta charset="utf-8">
+    <title>Game Stats</title>
+    <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+    <script src="javascripts/calendar.js"></script>
+
+    
+</head>
+<body>
+
+    <div class="main_div">
+        <h1 class="text-danger text-center"><b>Game Stats</b></h1>
+        <div class="mt-3 mb-3">
+            <div class="card">
+                <div class="card-header">&nbsp;</div>
+
+                <div id="add_new">
+                    <h6>Add new:<h6>
+                    <button id="add_game" onclick="add_new_game_page()">Add game</button>
+                    <button id="add_mode" onclick="add_new_mode_page()">Add mode</button>
+                    <button id="add_map" onclick="add_new_map_page()">Add map</button>
+                    <button id="to_do_list" onclick="To_do_list()">To do list</button>    
+
+                </div>
+
+                <div id="game_names">
+                    <ul id="ul_for_buttons01">
+                    <li>ShowBy:</li>
+                    <li><button id="showall" onclick="load_data_all()">All</button></li>
+                    <!--li><button>one</button></li>
+                    <li><button>two</button></li>
+                    <li><button>three</button></li>
+                    <li><button>four</button></li-->
+                    </ul>
+                
+                 
+                <div>GameMode:</div>
+                <div id="game_mods">
+                    <ul id="ul_for_buttons02">
+                    <!--li>GameMode:</li>
+                    <li><button id="button01">one</button></li>
+                    <li><button>two</button></li>
+                    <li><button>three</button></li>
+                    <li><button>four</button></li-->
+                    </ul>
+                </div>
+                <div>GameMap:</div>
+                <div id="game_maps">
+                    <ul id="ul_for_buttons03">
+                    <!--li>GameMap:</li>
+                    <li><button id="button01">one</button></li>
+                    <li><button>two</button></li>
+                    <li><button>three</button></li>
+                    <li><button>four</button></li-->
+                    </ul>
+                </div>
+
+                <div id="Group_Number">
+                    <ul id="ul_for_buttons05">
+                    <li>Group Number:</li>
+                    <li><button id="group_num:1" onclick="searchAndEnterByGroupNumber(1)">Solo</button></li>
+                    <li><button id="group_num:2" onclick="searchAndEnterByGroupNumber(2)">Duo</button></li>
+                    <li><button id="group_num:3" onclick="searchAndEnterByGroupNumber(3)">Trio</button></li>
+                    <li><button id="group_num:4" onclick="searchAndEnterByGroupNumber(4)">Quad</button></li>
+                    </ul>
+                </div>
+
+
+                <div id="sort_by">
+                    <ul id="ul_for_buttons04">
+                    <li>SortBy:</li>
+                    <li><button onclick="initButtonStatus('ID')" id="button-id">ID</button></li>
+                    <li><button onclick="initButtonStatus('PLACE')" id="button-place">Place</button></li>
+                    <li><button onclick="initButtonStatus('KILLS')" id="button-kills">Kills</button></li>
+                    <li><button onclick="initButtonStatus('DEATH')" id="button-death">Death</button></li>
+                    <li><button onclick="initButtonStatus('KD')" id="button-kd">K/D</button></li>
+                    <li><button onclick="initButtonStatus('SCORE')" id="button-score">Score</button></li>
+                    </ul>
+                </div>
+
+                <div class="img_link"><a>
+                    <img id="img_src" src="images/maps/Warzone2MW2.jpg">
+                </a>
+                </div>
+
+                <div class="card-body">
+                    <table class="table table-bordered mt-3">
+                        <thead>
+                            <tr>
+                                <th class="text-light bg-dark">ID
+                                <th class="text-light bg-dark">Game Name</th>
+                                <th class="text-light bg-dark">Game Mode</th>
+                                <th class="text-light bg-dark">Place</th>
+                                <th class="text-light bg-dark">Kills</th>
+                                <th class="text-light bg-dark">Death</th>
+                                <th class="text-light bg-dark">K/D</th>        
+                                <th class="text-light bg-dark">Date</th>
+                                <th class="text-light bg-dark">Current Rank</th>
+                                <th class="text-light bg-dark">Number redeploys</th>
+                                <th class="text-light bg-dark">Map</th>
+                                <th class="text-light bg-dark">Group Number</th>
+                                <th class="text-light bg-dark">Score
+                                <th class="text-light bg-dark">More To Add</th>
+                                <th>ADD/REMOVE</th>
+                                <th>UPDATE</th>
+                            </tr>
+
+                            
+                        </thead>
+                        <tbody id="results">
+
+                        </tbody>
+                    </table>
+
+                    <div id="page=1">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="javascripts/script.js"></script>
+<script src="javascripts/addetion_to_script.js"></script>
+<script src="javascripts/add_new_things.js"></script>
+
+

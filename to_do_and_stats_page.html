@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+    <script src="javascripts/To_do_list_page.js"></script>
+</head>  
+
+<body onload="">
+
+<div>
+    <button onclick="backToHomePage()">Home Page</button>
+    <button onclick="ResetAllGuns()">Reset All Guns</button>
+    <button onclick="load_all_to_do_list()">Warzone2</button>
+    <button onclick="load_all_to_do_list2()">MW2</button>
+    <button onclick="ResetAllGuns2()">Reset All Guns2</button>
+</div>
+
+
+<div class="card-body">
+<table class="table table-bordered mt-3">
+    <div id="Warzone2TITLE"><h1>Warzone2</h1></div>
+    <thead>
+        <tr>
+            <th class="text-light bg-dark">ID</th>
+            <th class="text-light bg-dark">Gun Name</th>
+            <th class="text-light bg-dark">Gun Img</th>
+            <th class="text-light bg-dark">Gun Type</th>
+            <th class="text-light bg-dark">Gun Used</th>
+            
+            <th>ADD/REMOVE</th>
+            <th>UPDATE</th>
+        </tr>
+    </thead>
+    <tbody id="results">
+
+    </tbody>
+</table>
+</div>
+
+<div class="card-body">
+    <table class="table table-bordered mt-3">
+        <div id="MW2TITLE"><h1>MW2</h1></div>
+        <thead>
+            <tr>
+                <th class="text-light bg-dark">ID</th>
+                <th class="text-light bg-dark">Gun Name</th>
+                <th class="text-light bg-dark">Gun Img</th>
+                <th class="text-light bg-dark">Gun Type</th>
+                <th class="text-light bg-dark">Gun Used</th>
+                
+                <th>ADD/REMOVE</th>
+                <th>UPDATE</th>
+            </tr>
+        </thead>
+        <tbody id="results2">
+    
+        </tbody>
+    </table>
+    </div>
+</body>
+</html>
