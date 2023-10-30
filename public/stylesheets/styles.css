@@ -1,0 +1,69 @@
+html, body {
+    height:100%;
+    width: 100%;
+}
+
+
+.table.table-bordered.mt-3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+/*its for ths buttons on top of the lists*/
+  ul{ 
+    width: 750px;
+   display: block;
+   white-space: nowrap;
+   font-size: 0;
+    overflow: auto; 
+    }
+li { 
+    width: auto;
+    display: inline-block;
+   font-size: 16px;
+    }
+
+
+  #ul_for_buttons03 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+  ul_for_buttons03 li {
+      flex-basis: 50%;
+      box-sizing: border-box;
+    }   
+    
+
+#add_new{
+  position: absolute;
+  top: -20px; 
+  left: 1600px;
+}
+
+button.pressed {
+  border-style: inset;
+  
+    /* Add any additional styles to indicate the pressed state */
+  }
+
+div.img_link img {
+  position: absolute;
+  top: 40px; 
+  left: 800px;
+  width: 350px;
+  height: 250px;
+}
+
+
+#gun_img_data{
+  top: 40px; 
+  left: 50px;
+  width: 250px;
+  height: 150px;
+}
+
+
+.hideME{
+  display: none;
+}

@@ -1,0 +1,13 @@
+
+    Veteran: Battle Hardened, Tracker, Fast Hands, Survivor
+    Bomber: Bomb Squad, Strong Arm, Resupply, Survivor
+    Insurgent: Strong Arm, Scavenger, Cold-Blooded, Ghost
+    SWAT: Battle Hardened, Double Time, Spotter, Survivor
+    Ranger: Double Time, Scavenger, Focus, Quick Fix
+    Vanguard: Double Time, Bomb Squad, Resupply, High Alert
+    Scout: Scavenger, Strong Arm, Focus, Ghost
+    Specter: Double Time, Tracker, Spotter, Ghost
+    Sentinel: Battle Hardened, Bomb Squad, Cold Blooded, Quick Fix
+    Warden: Double Time, Strong Arm, Fast Hands, Birdseye
+    Commando: Scavenger, Strong Arm, Fast Hands, High Alert
+    Scout: Scavenger, Strong Arm, Focus, Ghost
